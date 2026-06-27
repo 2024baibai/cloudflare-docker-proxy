@@ -1,5 +1,9 @@
 name = "cloudflare-docker-proxy"
+main = "src/index.js"
 compatibility_date = "2023-12-01"
+routes = [
+  { pattern = "docker.tkbond.net", custom_domain = true },
+]
 
 [[r2_buckets]]
 binding = "REGISTRY_BUCKET"
