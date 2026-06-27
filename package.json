@@ -13,6 +13,7 @@
   },
   "scripts": {
     "format": "prettier --write '**/*.{js,css,json,md}'",
+    "test": "node --test",
     "build": "webpack",
     "dev": "npx wrangler dev src/index.js --env dev"
   },

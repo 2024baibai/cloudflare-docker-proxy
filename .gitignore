@@ -54,6 +54,8 @@ Temporary Items
 .history
 .ionide
 
+docs/
+
 # Support for Project snippet scope
 !.vscode/*.code-snippets
 
