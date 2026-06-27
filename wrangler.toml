@@ -12,19 +12,19 @@ CUSTOM_DOMAIN = "libcuda.so"
 [env.dev.vars]
 MODE = "debug"
 TARGET_UPSTREAM = "https://registry-1.docker.io"
-CUSTOM_DOMAIN = "exmaple.com"
+CUSTOM_DOMAIN = "tkbond.net"
 
 [env.production]
 name = "cloudflare-docker-proxy"
-# routes = [
-#   { pattern = "docker.libcuda.so", custom_domain = true },
-#   { pattern = "quay.libcuda.so", custom_domain = true },
-#   { pattern = "gcr.libcuda.so", custom_domain = true },
-#   { pattern = "k8s-gcr.libcuda.so", custom_domain = true },
-#   { pattern = "k8s.libcuda.so", custom_domain = true },
-#   { pattern = "ghcr.libcuda.so", custom_domain = true },
-#   { pattern = "cloudsmith.libcuda.so", custom_domain = true },
-# ]
+routes = [
+  { pattern = "docker.tkbond.net", custom_domain = true },
+  { pattern = "quay.tkbond.net", custom_domain = true },
+  { pattern = "gcr.tkbond.net", custom_domain = true },
+  { pattern = "k8s-gcr.tkbond.net", custom_domain = true },
+  { pattern = "k8s.tkbond.net", custom_domain = true },
+  { pattern = "ghcr.tkbond.net", custom_domain = true },
+  { pattern = "cloudsmith.tkbond.net", custom_domain = true },
+]
 
 [env.production.vars]
 MODE = "production"
